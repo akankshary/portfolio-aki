@@ -1,6 +1,6 @@
 #  Aki Yadav — Software Engineer Portfolio
 
-**Live demo:** [aki-portfolio.vercel.app](https://aki-portfolio.vercel.app)
+**Live demo:** [akiyadav.dev](akiyadav.devp)
 
 ---
 
