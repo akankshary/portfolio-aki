@@ -1,103 +1,151 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
+import Sections from "@/components/Sections";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main>
+      <Hero />
+      <Sections />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Recognition & Leadership */}
+      <section id="leadership" className="relative w-full overflow-hidden scroll-mt-24">
+        {/* full-width pink/lilac glow */}
+        <div
+          className="pointer-events-none absolute inset-0 -z-10
+          bg-[radial-gradient(80%_60%_at_50%_0%,rgba(236,72,153,0.20),transparent),
+              radial-gradient(70%_55%_at_15%_40%,rgba(168,85,247,0.18),transparent),
+              radial-gradient(70%_55%_at_85%_40%,rgba(244,114,182,0.16),transparent)]"
+        />
+
+        <div className="mx-auto max-w-6xl px-5 py-12">
+          <h2 className="text-xl sm:text-2xl font-semibold text-slate-100 mb-6">
+            Recognition & Leadership
+          </h2>
+
+          {/* MOBILE-FIRST: 1 col on phones, 2 cols on md */}
+          <div className="grid gap-4 md:grid-cols-2">
+            {/* ULead Feature */}
+            <div className="rounded-2xl bg-white/5 border border-pink-400/15 p-5">
+              <h3 className="text-base font-medium text-slate-200">
+                Featured in University of Dayton Magazine — ULead Emerging Leaders Program
+              </h3>
+              <p className="mt-2 text-sm text-slate-400">
+                Selected to represent the ULead Emerging Leaders Program and featured
+                discussing leadership development, inclusion, and community impact.
+              </p>
+              <a
+                href="https://www.mydigitalpublication.com/publication/?i=740113&p=13&view=issueViewer"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-block text-sm text-pink-300 hover:underline"
+              >
+                Read article →
+              </a>
+            </div>
+
+            {/* Outstanding Student Award */}
+            <div className="rounded-2xl bg-white/5 border border-pink-400/15 p-5">
+              <h3 className="text-base font-medium text-slate-200">
+                Outstanding Student Award — University of Dayton (2023)
+              </h3>
+              <p className="mt-2 text-sm text-slate-400">
+                Recipient of the 2023 Student Leadership Award for exceptional academic
+                achievement, leadership, service, and contributions to building a
+                welcoming and inclusive campus community.
+              </p>
+            </div>
+
+            {/* AWS Certification */}
+            <div className="rounded-2xl bg-white/5 border border-pink-400/15 p-5">
+              <h3 className="text-base font-medium text-slate-200">
+                AWS Certified Cloud Practitioner
+              </h3>
+              <p className="mt-2 text-sm text-slate-400">
+                Issued by Amazon Web Services Training and Certification. Demonstrated
+                foundational cloud fluency and understanding of core AWS services,
+                architectures, and best practices.
+              </p>
+              <a
+                href="https://www.credly.com/badges/18dcd436-d4fa-4df2-9da4-2fb24fabfbee/linked_in"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-block text-sm text-pink-300 hover:underline"
+              >
+                View badge →
+              </a>
+            </div>
+
+            {/* SGA */}
+            <div className="rounded-2xl bg-white/5 border border-pink-400/15 p-5">
+              <h3 className="text-base font-medium text-slate-200">
+                Student Government Association — Senior Senator / Senior Representative
+              </h3>
+              <p className="mt-2 text-sm text-slate-400">
+                Served as a senior student representative and worked with campus stakeholders to
+                improve student experience and safety initiatives.
+              </p>
+              <ul className="mt-3 list-disc list-inside space-y-1 text-sm text-slate-300">
+                <li>
+                  Partnered with Public Safety and campus leadership to support safety-focused
+                  initiatives and promote a violence-free campus environment.
+                </li>
+                <li>
+                  Advocated for student concerns by collecting feedback, elevating issues through
+                  SGA channels, and coordinating follow-ups with relevant departments.
+                </li>
+                <li>
+                  Supported campus programming and student engagement efforts by helping plan,
+                  promote, and execute student-facing initiatives.
+                </li>
+              </ul>
+              <a
+                href="https://www.instagram.com/p/CyCTuZaO0n5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-block text-sm text-pink-300 hover:underline"
+              >
+                View SGA spotlight post →
+              </a>
+            </div>
+
+            {/* Distance 4 Dreams (full width on md) */}
+            <div className="rounded-2xl bg-white/5 border border-pink-400/15 p-5 md:col-span-2">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-2">
+                <div>
+                  <h3 className="text-base font-medium text-pink-200">Distance 4 Dreams</h3>
+                  <p className="text-sm text-slate-400">President & Director of Finance</p>
+                </div>
+                <span className="text-xs text-slate-500">Aug 2021 – Present</span>
+              </div>
+
+              <ul className="mt-3 list-disc list-inside space-y-1 text-sm text-slate-300">
+                <li>
+                  Successfully raised and donated <strong>$7,000</strong> to A Special Wish
+                  Foundation to support a child diagnosed with Cerebral Palsy and Wilms’ Tumor
+                  (kidney cancer).
+                </li>
+                <li>
+                  Led planning and execution of a parent’s weekend breakfast fundraiser, raising
+                  a record-breaking <strong>$3,000</strong> in a single event.
+                </li>
+                <li>
+                  Coordinated vendors, managed logistics, and led volunteer teams to ensure smooth
+                  execution of all fundraising initiatives.
+                </li>
+              </ul>
+
+              <a
+                href="https://www.instagram.com/p/Ch03r88jqJg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                target="_blank"
+                rel="noreferrer"
+                className="mt-4 inline-block text-sm text-pink-300 hover:underline"
+              >
+                View Distance 4 Dreams highlight on Instagram →
+              </a>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+    </main>
   );
 }
