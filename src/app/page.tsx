@@ -8,7 +8,10 @@ export default function Home() {
       <Sections />
 
       {/* Recognition & Leadership */}
-      <section id="leadership" className="relative w-full overflow-hidden scroll-mt-24">
+      <section
+        id="leadership"
+        className="relative w-full overflow-hidden scroll-mt-24"
+      >
         {/* full-width pink/lilac glow */}
         <div
           className="pointer-events-none absolute inset-0 -z-10
@@ -27,7 +30,8 @@ export default function Home() {
             {/* ULead Feature */}
             <div className="rounded-2xl bg-white/5 border border-pink-400/15 p-5">
               <h3 className="text-base font-medium text-slate-200">
-                Featured in University of Dayton Magazine — ULead Emerging Leaders Program
+                Featured in University of Dayton Magazine — ULead Emerging Leaders
+                Program
               </h3>
               <p className="mt-2 text-sm text-slate-400">
                 Selected to represent the ULead Emerging Leaders Program and featured
@@ -81,67 +85,57 @@ export default function Home() {
                 Student Government Association — Senior Senator / Senior Representative
               </h3>
               <p className="mt-2 text-sm text-slate-400">
-                Served as a senior student representative and worked with campus stakeholders to
-                improve student experience and safety initiatives.
+                Served as a senior student representative and worked with campus
+                stakeholders to improve student experience and safety initiatives.
               </p>
               <ul className="mt-3 list-disc list-inside space-y-1 text-sm text-slate-300">
                 <li>
-                  Partnered with Public Safety and campus leadership to support safety-focused
-                  initiatives and promote a violence-free campus environment.
+                  Partnered with Public Safety and campus leadership to support
+                  safety-focused initiatives and promote a violence-free campus
+                  environment.
                 </li>
                 <li>
-                  Advocated for student concerns by collecting feedback, elevating issues through
-                  SGA channels, and coordinating follow-ups with relevant departments.
+                  Advocated for student concerns by collecting feedback, elevating
+                  issues through SGA channels, and coordinating follow-ups with
+                  relevant departments.
                 </li>
                 <li>
-                  Supported campus programming and student engagement efforts by helping plan,
-                  promote, and execute student-facing initiatives.
+                  Supported campus programming and student engagement efforts by
+                  helping plan, promote, and execute student-facing initiatives.
                 </li>
               </ul>
-              <a
-                href="https://www.instagram.com/p/CyCTuZaO0n5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                target="_blank"
-                rel="noreferrer"
-                className="mt-3 inline-block text-sm text-pink-300 hover:underline"
-              >
-                View SGA spotlight post →
-              </a>
             </div>
 
             {/* Distance 4 Dreams (full width on md) */}
             <div className="rounded-2xl bg-white/5 border border-pink-400/15 p-5 md:col-span-2">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-2">
                 <div>
-                  <h3 className="text-base font-medium text-pink-200">Distance 4 Dreams</h3>
-                  <p className="text-sm text-slate-400">President & Director of Finance</p>
+                  <h3 className="text-base font-medium text-pink-200">
+                    Distance 4 Dreams
+                  </h3>
+                  <p className="text-sm text-slate-400">
+                    President & Director of Finance
+                  </p>
                 </div>
                 <span className="text-xs text-slate-500">Aug 2021 – Present</span>
               </div>
 
               <ul className="mt-3 list-disc list-inside space-y-1 text-sm text-slate-300">
                 <li>
-                  Successfully raised and donated <strong>$7,000</strong> to A Special Wish
-                  Foundation to support a child diagnosed with Cerebral Palsy and Wilms’ Tumor
-                  (kidney cancer).
+                  Successfully raised and donated <strong>$7,000</strong> to A Special
+                  Wish Foundation to support a child diagnosed with Cerebral Palsy and
+                  Wilms’ Tumor (kidney cancer).
                 </li>
                 <li>
-                  Led planning and execution of a parent’s weekend breakfast fundraiser, raising
-                  a record-breaking <strong>$3,000</strong> in a single event.
+                  Led planning and execution of a parent’s weekend breakfast
+                  fundraiser, raising a record-breaking <strong>$3,000</strong> in a
+                  single event.
                 </li>
                 <li>
-                  Coordinated vendors, managed logistics, and led volunteer teams to ensure smooth
-                  execution of all fundraising initiatives.
+                  Coordinated vendors, managed logistics, and led volunteer teams to
+                  ensure smooth execution of all fundraising initiatives.
                 </li>
               </ul>
-
-              <a
-                href="https://www.instagram.com/p/Ch03r88jqJg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                target="_blank"
-                rel="noreferrer"
-                className="mt-4 inline-block text-sm text-pink-300 hover:underline"
-              >
-                View Distance 4 Dreams highlight on Instagram →
-              </a>
             </div>
           </div>
         </div>

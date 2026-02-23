@@ -9,7 +9,7 @@ export default function Hero() {
   );
 
   return (
-    <section className="relative w-full overflow-hidden">
+    <section id="home" className="relative w-full overflow-hidden scroll-mt-24">
       {/* FULL-WIDTH BARBIE GLOW BACKGROUND */}
       <div
         className="pointer-events-none absolute inset-0 -z-20
@@ -52,10 +52,14 @@ export default function Hero() {
 
           {/* DESCRIPTION */}
           <p className="mt-4 max-w-prose text-sm sm:text-base text-slate-300">
-            I build ML evaluation pipelines and production-grade web apps—deepfake
-            detection with CNNs/ViTs, real-time systems, and reliable CI/CD.
-            Recently improved model classification accuracy by{" "}
-            <span className="text-slate-100 font-semibold">15%</span>.
+            Software Engineer + AI Researcher building deepfake detection and AR safety
+            systems alongside production-grade full-stack apps. Benchmarked CNN/ViT models
+            across FaceForensics++, DFDC, Celeb-DF, and OpenForensics, improving
+            classification accuracy by{" "}
+            <span className="text-slate-100 font-semibold">15%</span>; integrated CNNs +
+            Deep Q-Networks (DQN) for AI-driven hazard detection achieving{" "}
+            <span className="text-slate-100 font-semibold">90%+ accuracy</span>. I ship
+            reliable systems with Docker/Jenkins CI/CD and cloud deployments.
           </p>
 
           {/* PRIMARY LINKS */}
