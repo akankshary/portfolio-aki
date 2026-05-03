@@ -52,14 +52,11 @@ export default function Hero() {
 
           {/* DESCRIPTION */}
           <p className="mt-4 max-w-prose text-sm sm:text-base text-slate-300">
-            Software Engineer + AI Researcher building deepfake detection and AR safety
-            systems alongside production-grade full-stack apps. Benchmarked CNN/ViT models
-            across FaceForensics++, DFDC, Celeb-DF, and OpenForensics, improving
-            classification accuracy by{" "}
-            <span className="text-slate-100 font-semibold">15%</span>; integrated CNNs +
-            Deep Q-Networks (DQN) for AI-driven hazard detection achieving{" "}
-            <span className="text-slate-100 font-semibold">90%+ accuracy</span>. I ship
-            reliable systems with Docker/Jenkins CI/CD and cloud deployments.
+          Software Engineer with experience in AI research, full-stack development, and
+          cloud-native systems. I work across Java, Python, and TypeScript — building
+          production microservices with Spring Boot and Kafka, React/Redux frontends, and
+          ML pipelines in PyTorch. Comfortable from REST APIs and distributed systems down
+          to CNN/ViT model evaluation and DevOps with Docker, Kubernetes, and AWS.
           </p>
 
           {/* PRIMARY LINKS */}
