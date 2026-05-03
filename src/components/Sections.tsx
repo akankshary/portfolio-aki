@@ -62,10 +62,24 @@ export default function Sections() {
 
   const EXPERIENCE: Experience[] = [
     {
+      role: "Software Engineer",
+      org: "Affirm",
+      location: "Remote, USA",
+      date: "Jun 2025 – Present",
+      bullets: [
+        "Developed AI-driven loan approval platform leveraging Claude 3 for predictive scoring, default estimation, and risk assessment.",
+        "Implemented Spring Boot microservices via gRPC and Kafka for real-time credit scoring pipelines, improving system reliability by 19%.",
+        "Designed RESTful APIs for loan approval forecasts, risk profiles, and fraud alerts — reducing latency by 22%.",
+        "Built React/TypeScript/Redux dashboards with AWS Aurora and Kafka streams, improving reporting speed by 17%.",
+        "Secured platform with Spring Security, OAuth 2.0, and JWT; maintained SOC 2, PCI DSS, and FFIEC compliance.",
+      ],
+    },
+
+    {
       role: "AI Research Assistant",
       org: "Department of Computer Science, University of Dayton",
       location: "Dayton, OH",
-      date: "May 2025 – Present",
+      date: "June 2024 – May 2025",
       bullets: [
         "Benchmarked CNN and Vision Transformer architectures on FaceForensics++, DFDC, Celeb-DF, and OpenForensics datasets, improving classification accuracy by 15%.",
         "Built reproducible preprocessing and evaluation pipelines in PyTorch for large-scale deepfake detection experiments.",
